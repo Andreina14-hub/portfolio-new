@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="./css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--- NAVBAR --->
+    <section class="section">
+      <nav class="navbar is-fixed-top is-dark">
+        <div class="navbar-brand">
+          <!-- <a class="navbar-item" href="https://bulma.io"> -->
+          <!-- <img
+              src="https://bulma.io/images/bulma-logo-white.png"
+              alt="Bulma: a modern CSS framework based on Flexbox"
+              width="112"
+              height="28"
+            /> -->
+
+          <!-- </a> -->
+          <div class="navbar-burger" data-target="navMenuColordark-example">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="navMenuColordark-example " class="navbar-menu">
+          <div class="navbar-end pr-6">
+            <a class="navbar-item" href="#about"> About </a>
+            <a class="navbar-item" href="#projects"> Projects </a>
+            <a class="navbar-item" href="#skills"> Skills </a>
+            <a class="navbar-item" href="#contact"> Contact </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--- ABOUT --->
+    <section id="about" class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-vcentered">
+          <div class="column is-7">
+            <h2 class="title">About</h2>
+            <p class="subtitle">
+              I have more than 10 years of experience in customer service,
+              commerce and sales, this led me to train in the area of
+              <strong>!UX/UI</strong>
+              Design, as this way I can help companies to create their designs
+              based on what the user needs and how they interact.
+            </p>
+          </div>
+          <div class="column">
+            <p class="bd-notification is-primary">
+              <!-- <figure class="image is-4by5"> -->
+              <img
+                width="300"
+                height="300"
+                class="is-rounded effect-img"
+                src="./public/img/yo.png"
+              />
+              <!-- </figure>   -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr1" />
+    <!--- PROJECTS --->
+    <section id="projects" class="section">
+      <div class="container is-max-widescreen">
+        <h2 class="title">Projects</h2>
+        <div class="columns">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-9by16">
+                  <a class="link" href="http://www.google.com" target="_blank">
+                    <img
+                      src="./public/img/facil-list.png"
+                      alt="Placeholder image"
+                    />
+                    <div class="overlay">
+                      <button class="show button is-info">Show More</button>
+                    </div>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-9by16">
+                  <a href="http://www.google.com" target="_blank">
+                    <img
+                      src="./public/img/monkey-training.png"
+                      alt="Placeholder image"
+                    />
+                    <div class="overlay">
+                      <button class="show button is-info">Show More</button>
+                    </div>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-9by16">
+                  <a href="http://www.google.com" target="_blank">
+                    <img
+                      src="./public/img/libreria.png"
+                      alt="Placeholder image"
+                    />
+                    <div class="overlay">
+                      <button class="show button is-info">Show More</button>
+                    </div>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr1" />
+    <!--- SKILLS --->
+    <section id="skills" class="section">
+      <div class="container is-max-widescreen">
+        <h2 class="title">Skills</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle">Soft Skills</p>
+                <div class="content">
+                  <ul>
+                    <li><span class="check">&#10003;</span> Communicative</li>
+                    <li><span class="check">&#10003;</span> Empative</li>
+                    <li><span class="check">&#10003;</span> Problem solving</li>
+                    <li><span class="check">&#10003;</span> Time management</li>
+                    <li><span class="check">&#10003;</span> Organized</li>
+                    <li><span class="check">&#10003;</span> Proactive</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle">Technician Skills</p>
+                <div class="content">
+                  <ul>
+                    <li><span class="check">&#10003;</span> test</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr1" />
+    <!--- CONTACT --->
+    <section id="contact" class="section">
+      <div class="container is-max-widescreen">
+        <h2 class="title">Contact</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="card p-6">
+
+              <form  action="./php/email.php" method="POST">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input name="name" class="input" type="text" placeholder="Name" />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input name="email" class="input" type="email" placeholder="Email" />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea name="message" class="textarea" placeholder="Message"></textarea>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <input class="button is-link" type="submit" value="Submit">
+                    <!-- Send Email -->
+                  </input>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a
+                  href="./public//document/CV-Omar.pdf"
+                  target="_blank"
+                  download="cv-andreina"
+                  class="card-footer-item"
+                  >DOWLOAD</a
+                >
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- FOOTER --->
+    <footer class="footer has-text-white has-background-dark">
+      <div class="content has-text-centered">
+        <p>By Andreina Lopez, 2021</p>
+
+        <span class="icon is-medium">
+          <i class="fab fa-instagram fa-lg"></i>
+        </span>
+
+        <span class="icon is-medium">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/4ad4f90197.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>
